@@ -6,9 +6,13 @@
     ```
     sensor:
     - platform: solaxcloud
-      username: USERNAME
-      password: PASSWORD
-      site_id: SITE ID
+      token: TOKENID
     ```
-- To obtain your site id. Login to solaxcloud.com and click on Sites in the left menu. Inspect the Site-name with your browser developer tools. You should see something like "showAnalysis('xxxxxxxxxxxxxx','Home')" in the html code.
+- To obtain your token. Login to solaxcloud.com and click on Service > API in the left menu.
 - Verify that the custom entities are available in home assistant.
+
+
+## Documentation
+
+Solax has made their API public, with documentation located in your Solax Cloud site (Services > API).
+https://www.eu.solaxcloud.com:9443/proxy/api/getRealtimeInfo.do&sn=
